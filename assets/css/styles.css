@@ -2,6 +2,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Verdana,sans-serif;
     background-color: #1b1b1b;
     color:lightgrey;
+    
+    
 }
 
 a { 
@@ -28,6 +30,7 @@ header .container {
 }
 
 .navbar {
+    min-height: 100px;
     height: 100px;
     background-color: #2885B0;
     
@@ -54,22 +57,34 @@ header .container {
     border-bottom: 3px solid  ;
 }
 
-
-
-
-
-
 #name {
-    color: black;
     font-size: 350%;
     font-weight: 400;
+    
 }
 
+
+
+
+/* Main body content styling */
 main {
+    min-height: 100vh;
+    margin: 0;
+}
+
+main .flex {
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
 }
+
+main .container {
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+
 
 
 
@@ -78,15 +93,18 @@ main {
 
 footer .container {
     max-width: 1500px;
+    
     margin: 0 auto;
     overflow: auto;
     padding: 0 50px;
+    
 }
 
 .contact {
     height: 100px;
-    background-color: #2885B0;
     
+    background-color: #2885B0;
+
 }
 
 .contact .flex {
@@ -95,15 +113,19 @@ footer .container {
     align-items: center;
     height: 100%;
     flex: 1 1 auto;
+    
 }
 
 .contact ul{
     display: flex;
+    flex: 0 1 auto;
+    flex-wrap: wrap;
 }
 
 .contact li {
     padding: 10px 40px;
     font-size: larger;
+
 }
 
 .contact li:hover {
