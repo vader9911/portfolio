@@ -1,83 +1,115 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana,sans-serif;
+    background-color: #1b1b1b;
+    color:lightgrey;
+}
 
-
-a{
-    color: white;
+a { 
     text-decoration: none;
+    color: inherit;
 }
 
-header {
-    
-    color:white;
-    background-color: rgb(27, 27, 27);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+h1,
+h2 { 
+    font-weight: 200;
+    line-height: 1.4;
+    margin: 10px 0;
+
+}
+img{
+    width: 100%;
+}
+
+header .container {
+    max-width: 1500px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 50px;
+}
+
+.navbar {
     height: 100px;
-    /* border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%; */
-    border-radius: 25px;
-}
-
-header li {
-    padding: 0 5% 0 5%;
+    background-color: #2885B0;
     
 }
+
+.navbar .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    flex: 1 1 auto;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar li {
+    padding: 10px 40px;
+    font-size: larger;
+}
+
+.navbar li:hover {
+    border-bottom: 3px solid  ;
+}
+
+
+
+
+
 
 #name {
-    padding: 0 5% 0 5%;
-
-
+    color: black;
+    font-size: 350%;
+    font-weight: 400;
 }
-
-#navbar {
-    background-color: rgb(27, 27, 27);
-    display: flex;
-    padding: 15px;
-    list-style: none;
-    flex-direction: row;
-    font-size: 24px;
-    color: white;
-    text-decoration: none;
-    flex-wrap: wrap ;
-    
-}
-
 
 main {
-    
-    background-color: black;
-    border: 10px green;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
 }
 
 
-footer {
 
+
+/* Footer Styling */
+
+footer .container {
+    max-width: 1500px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 50px;
+}
+
+.contact {
+    height: 100px;
+    background-color: #2885B0;
+    
+}
+
+.contact .flex {
     display: flex;
-    color:rgb(161, 161, 161);
-    background-color: rgb(27, 27, 27);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;    
+    justify-content: space-between;
     align-items: center;
-    padding: 8px;
-    justify-content:space-evenly;
-    flex-direction: row;
-   
-    border-radius: 25px;
+    height: 100%;
+    flex: 1 1 auto;
 }
 
-footer li {
-    padding: 0 15% 0 15%;
-}
-
- #contact  {
-
+.contact ul{
     display: flex;
-    background-color: rgb(27, 27, 27);
-    justify-content: center;
-    padding: 2px;
-    list-style: none;
-    
+}
+
+.contact li {
+    padding: 10px 40px;
+    font-size: larger;
+}
+
+.contact li:hover {
+    border-bottom: 3px solid  ;
+}
     
 
-}
+
 
