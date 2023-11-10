@@ -15,6 +15,8 @@
 
 Me, myself, and I --- Jeffrey Scott
 
+Used snippets from MDN Web Docs that I adapted to my code
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
