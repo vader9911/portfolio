@@ -16,7 +16,6 @@ h2 {
     font-weight: 200;
     line-height: 1.4;
     margin: 10px 0;
-
 }
 img{
     width: 100%;
@@ -28,7 +27,7 @@ img{
 header .container {
     max-width: 1500px;
     margin: 0 auto;
-    overflow: auto;
+    overflow: auto; 
     padding: 0 50px;
 }
 
@@ -40,6 +39,7 @@ header .container {
 @media screen and (max-width: 1000px) {
     .navbar{
         height: fit-content;
+        
     }
 }
 
@@ -54,12 +54,22 @@ header .container {
 @media screen and (max-width: 1000px) {
     .navbar .flex{
         height: fit-content;
+        flex-direction: column;
+        
     }
 }
 .navbar ul{
     display: flex;
     flex-wrap: wrap;
-    flex: 1 1 auto;
+    flex: 2 1 auto;
+}
+
+@media screen and (max-width: 972px) {
+    .navbar ul{
+        flex-direction: column;
+        align-items: center;
+        
+    }
 }
 
 .navbar li {
@@ -72,9 +82,16 @@ header .container {
 }
 
 #name {
+    flex: 0 0 auto;
     font-size: 350%;
     font-weight: 400;
-    
+}
+
+@media screen and (max-width: 972px) {
+    #name {
+        font-size: 220%;
+
+    }
 }
 
 /* ------------------------------------------------------------------------------------------------------------ */
@@ -108,7 +125,7 @@ main .section-header {
     font-size: 48px;
     font-weight: bold;
     border: coral solid 2px;
-    background-color: aquamarine;
+    background-color: rgba(127, 255, 212, 0.808);
     border-radius: 25px;
     text-align: center;
 }
@@ -125,6 +142,9 @@ main #about{
     flex-wrap: nowrap;
     background-color: #2885B0;
     border-radius: 25px;
+    width:90%;
+    min-width: 360px;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -176,9 +196,8 @@ main .container #work{
     flex-wrap: wrap;
     margin: 10px 50px;
     flex: 1 1 400px;
-    
-
 }
+
 
 
 .project-card {
@@ -188,7 +207,9 @@ main .container #work{
     margin: 10px;
     display: flex;
     flex-direction: column-reverse;
+    min-width: none;
 }
+
 
 .project-card h4 {
     display: flex;
@@ -197,16 +218,21 @@ main .container #work{
     color:lightgray;
     background-color: #1b1b1b;
     border: 3px solid coral;
-    border-radius: 25px;
-    text-align: center;
+    border-radius: 25px; 
     height:200px;
     align-items: center;
+    width: 400px;   
 }
+
+
 
 .project-card img{
     width: 400px;
     height: 200px;
+    border-radius: 25px;
 }
+
+
 
 
 /* ------------------------------------------------------------------------------------------------------------ */
@@ -215,7 +241,7 @@ main .container #work{
 
 footer .container {
     max-width: 1500px;
-    margin: 0 auto;
+    margin: auto;
     overflow: auto;
     padding: 0 50px;
     
@@ -234,6 +260,10 @@ footer .container {
     height: 100%;
     flex: 1 1 auto;
     
+}
+
+.contact h3 {
+    flex: 1 0 auto;
 }
 
 .contact ul{
