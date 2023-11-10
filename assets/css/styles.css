@@ -101,9 +101,15 @@ main div {
 }
 
 main .section-header {
-    margin-top: 50px;
+    margin: 50px;
     width: 100%;
+    min-width:350px;
+    color: Black;
+    font-size: 48px;
+    font-weight: bold;
     border: coral solid 2px;
+    background-color: aquamarine;
+    border-radius: 25px;
     text-align: center;
 }
 
@@ -115,9 +121,10 @@ main #about{
     justify-content: center;
     align-items: center;
     flex-direction: row; 
-    padding: 10px;
+    padding: 25px;
     flex-wrap: nowrap;
-    
+    background-color: #2885B0;
+    border-radius: 25px;
 }
 
 @media screen and (max-width: 768px) {
@@ -125,8 +132,24 @@ main #about{
 }
 
 #about p{
-    font-size: large;
+    display: flex;
+    color:lightgray;
+    background-color: #1b1b1b;
+    border-radius: 25px;
+    height:250px;
+    border: 3px solid coral;
+    font-size: 24px;
     padding: 20px;
+    margin: 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+    min-width: 350px;
+    flex: 1 0;
+    
+    
+    
 }
 
 #about #bold {
@@ -139,7 +162,10 @@ main #about{
 #headshot {
     height:250px;
     width: 250px;
+    border: 1px none black;
+    border-radius: 25%;
 }
+
 
 
 
@@ -148,13 +174,42 @@ main #about{
 
 main .container #work{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px 50px;
+    flex: 1 1 400px;
     
+
 }
 
 
+.project-card {
+    padding: 20px;
+    background-color: #2885B0;
+    border-radius: 25px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.project-card h4 {
+    display: flex;
+    padding:10px;
+    margin: 10px;
+    color:lightgray;
+    background-color: #1b1b1b;
+    border: 3px solid coral;
+    border-radius: 25px;
+    text-align: center;
+    height:200px;
+    align-items: center;
+}
+
+.project-card img{
+    width: 400px;
+    height: 200px;
+}
 
 
 /* ------------------------------------------------------------------------------------------------------------ */
@@ -163,7 +218,6 @@ main .container #work{
 
 footer .container {
     max-width: 1500px;
-    
     margin: 0 auto;
     overflow: auto;
     padding: 0 50px;
@@ -172,7 +226,6 @@ footer .container {
 
 .contact {
     height: 100px;
-    
     background-color: #2885B0;
 
 }
